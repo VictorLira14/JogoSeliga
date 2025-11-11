@@ -1,0 +1,26 @@
+if resposta == resposta_certa:
+      print("Correto! Você ganhou 10 pontos.")
+      pontos += 10
+else:
+      print(f"Errado! A resposta certa era '{resposta_certa}.")
+
+Função: verifica  se a resposta do jogador está certa.
+se sim, mostra o mensagem de acerto e soma pontos.
+
+se nao, mostra mensagem de erro.
+
+avaliar_desempenho()
+if pontos == 50:
+      print("Excelente ! Você acertou todas!")
+elif pontos >= 30:
+      print("muito bom! Voce foi bem!")
+elif pontos >=10:
+      print("Ta quase ! Dá pra melhoras!")
+else:
+      print("Estude um pouco mais e tente de novo!")
+
+      funçao: escolhe qual mensagem mostrar conforme a pontuaçã.
+
+if - pontuação perfeita
+elif - pontuação intermediaria
+else - pontuação baixa

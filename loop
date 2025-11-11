@@ -1,0 +1,18 @@
+Usadas para repetir ações automaticamente
+
+for i, (pergunta, opçoes, resposta_certa) in 
+enumerate(perguntas, start=1)
+funçao: repete o bloco para cada pergunta do quiz.
+Mostra a pergunta e as alternativas uma por uma
+Permite responder várias perguntas sem copiar o mesmo código.
+
+loop while
+while true:
+jogar()
+novamente = input("\nDeseja jogar novamente? (s/n): ").strip().Lower()
+if novamente ! ='s':
+print("Obrigado por jogar! até a proxima")
+break
+
+while true - repete infinitamente
+break - sai do loop quando o jogador digita "n"
