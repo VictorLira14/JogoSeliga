@@ -1,0 +1,67 @@
+// Primeiro ideia Principal
+criar uma aplicação simples
+
+*2// Estrutura Lógica*
+planejar o fluxo do jogo 
+1-mostrar um titulo de boas vindas
+2-Carregar as perguntas
+3-Embaralhar as perguntas
+4- fazer o jogador responder uma a uma
+5-Verificar se acertou
+6-Somar pontos
+
+*Etapa 2- Repetição e controle*
+Usamos loops (for e while) para repitir etapas
+o For percorre todas as perguntas.
+O While permite repetir o jogo inteiro.
+Lógica usada:
+"Enquanto o jogador quiser continuar, execute o jogo novamente".
+
+*Etapa 3- Decisões com condicionais*
+Após cada resposta, o programa precisa decidir:
+Se a resposta está certa - ganha pontos
+Se está errada - mostra a correta
+No fim, decide se o desempenho foi bom, médio ou ruim.
+
+*Etapa 4 - Organização com listas e tuplas* (Tuplas: Uma tupla é um tipo de estrutura de dados parecida com uma lista, mas com uma 
+diferença importante)
+Ela guarda informações juntas(pergunta, alternativas e resposta certa);
+E não precisa alterar esses dados durante o jogo.
+//
+As perguntas são guardadas em uma lista, e cada item é uma tupla.
+"Assim, cada tupla guarda a pergunta, as alternativas  e a resposta correta juntas".
+*Lógica usada*
+"Agrupar dados relacionados em uma única estrutura facilita o acesso e o uso no loop".
+
+*Etapa 5 - Manipulação de strings*
+O jogador pode digitar "A","a" ou "a".
+Por isso usamos resposta = input(...).strip().lower()
+Para remover espaços e deixar tudo minúsculo antes de comparar.
+*//Lógica usada: "Padronizar o texto digitado para comparar corretamente com a resposta esperada"//*
+
+*Etapa 6 - Modularização(uso de funções)*
+Cada parte do jogo é uma função separada:
+
+1-Exibir_Titulo() - mostra o titulo
+2-Carregar_perguntas() - guarda os dados
+3-Jogar() - executa o jogo
+4-Avaliar_Desempenho() - mostra o resultado final
+5-Main() - controla a execução geral
+
+*Lógica usada: "Dividir o programa em partes pequenas e reutilizáveis torna o código mais claro e fácil de manter"*
+
+if, elif, else - usados para tomar decisões no código
+if- testa a primeira condição
+elif - (else if) testa outra se a primeira for falsa
+else - executa se nenhuma for verdadeira
+
+for- é um loop(repetição) usado para percorrer listas, tuplas ou intervalos.
+
+random.suflle() - Embaralha(muda a ordem) dos itens em uma lista
+usado no quiz para embaralhar perguntas
+
+print() - mostra algo na tela
+
+strip() - Remove os espaços extras no começo e no fim de uma string
+
+lower() - Transforma todas as letras minúsculas
